@@ -1,0 +1,45 @@
+.row {
+    .catalog-page-direction {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #6E7191;
+        margin-bottom: 10px;
+
+        span {
+            color: #F56E1E;
+        }
+    }
+
+    .catalog-page-title {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 38px;
+        color: #4E4B66;
+        margin-bottom: 60px;
+    }
+    
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: flex-start;
+
+            .sidebar-block {
+                width: 23%;
+                margin-right: 4%;
+                height: auto;
+            }
+
+            .catalog-body-block {
+                width: 73%;    
+                height: auto;     
+            }
+        }
+    }
+}

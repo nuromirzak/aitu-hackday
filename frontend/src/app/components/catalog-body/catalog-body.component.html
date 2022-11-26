@@ -1,0 +1,29 @@
+<div class="catalog-body">
+    <div class="banner-wrapper">
+        <app-banner></app-banner>
+    </div>
+    <div class="categories-list">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" *ngFor="let category of categories">
+                    <app-category-item [item]="category"></app-category-item>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="categories-goods">
+        <div class="contanier-fluid">
+            <div class="catalog-goods-list" style="
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 36px;
+            margin-bottom: 20px;
+            ">Товары в данной категории</div>
+            <div class="row">
+                <div class="col-md-3" *ngFor="let good of categoryGoods">
+                    <app-catalog-product [product]="good"></app-catalog-product>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

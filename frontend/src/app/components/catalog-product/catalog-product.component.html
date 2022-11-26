@@ -1,0 +1,22 @@
+<a class="sale-product">
+    <div class="sale-product-img">
+        <img src="{{product['img_url']}}" alt="">
+        <span class="upper-title">Акция</span>
+        <div class="bookmark" (click)="isActiveBookmark()">
+            <img *ngIf="!isActiveMark" src="../../../assets/img/main/Save-bookmark.svg" alt="">
+            <img *ngIf="isActiveMark" src="../../../assets/img/main/Save-bookmark-active.svg" alt="">
+        </div>
+    </div>
+    <a class="sale-product-content" [routerLink]="['/products']" [queryParams]="{id: product['_id']}">
+        <div class="sale-product-price">
+            <div class="sale-product-text">
+                {{product['item_name']}}
+            </div>
+            <div class="sale-product-original-price">{{product['price']}}₸</div>
+        </div>
+    </a>
+    <div class="sale-product-btn">
+        <img src="../../../assets/img/main/cart-product.svg" alt="">
+        В корзину
+    </div>
+</a>

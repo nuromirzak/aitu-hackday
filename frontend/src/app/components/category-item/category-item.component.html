@@ -1,0 +1,10 @@
+<div class="categories-inner">
+    <a [routerLink]="['/catalog/', item.link]" [queryParams]="{'link': item.link}" class="overall">
+        <div class="catergories-item">
+            <div class="img-block">
+                <img src="../../../assets/img/main/{{item.img}}" alt="">
+            </div>
+            <div class="categories-name">{{item.name}}</div>
+        </div>
+    </a>
+</div>

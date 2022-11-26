@@ -1,0 +1,66 @@
+.navbar {
+    .container-fluid{
+        margin: 0;
+        padding: 0;
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 9px;
+            line-height: 11px;
+            color: #A0A3BD;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 8px 9px;
+            background: #F1F1F1;
+            border-radius: 40px;
+            margin-right: 60px;
+        }
+
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
+                    margin-left: 10px;
+                    margin-right: 10px;
+
+                    .btn-language {
+                        margin-right: 60px;
+                    }
+
+                    .dropdown-inner {
+                        .btn {
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 30px;
+                            color: #6E7191;
+                        }
+                    }
+                    
+                    a.nav-link {
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 30px;
+                        color: #6E7191;
+                    }
+                    
+                    a.phone-number {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 30px;
+                        color: #F56E1E;
+                    }
+                }
+
+                .social-navs {
+                    margin-left: 3px;
+                    margin-right: 3px;
+
+                    .social-network-1 {
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

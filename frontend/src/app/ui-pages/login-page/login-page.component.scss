@@ -1,0 +1,137 @@
+.registration-block {
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+
+        .registration-upper-title {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #6E7191;
+            margin-bottom: 15px;
+
+            span {
+                color: #F56E1E;
+            }
+        }
+
+        .registration-title {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 38px;
+            color: #4E4B66;
+            margin-bottom: 60px;
+        }
+
+        .registration-form-block {
+            margin-bottom: 30px;
+            form {
+                .registration-form-title {
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 24px;
+                    margin-bottom: 24px;
+                }
+                .overall-input-block {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    .input-block {
+                        width: 49%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        height: 100px;
+
+                        &:nth-child(1) {
+                            margin-right: 1%;
+                        }
+
+                        &:nth-child(2) {
+                            margin-left: 1%;
+                        }
+                        
+                        label {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 12px;
+                            color: #A0A3BC;
+                            margin-bottom: 5px;
+                        }
+
+                        label.touchedClass {
+                            color: #DE4503;
+                        }
+
+                        input {
+                            width: 100%;
+                            padding: 12px 10px;
+                            background: #FFFFFF;
+                            border: 1px solid #A0A3BC;
+                            border-radius: 12px;
+                        }
+                        
+                        .errorsField {
+                            color: rgb(191, 11, 11);
+                            list-style: none;
+                            padding-left: 0;
+                        }
+                    }
+                }
+
+                .btn-wrapper {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column  ;
+                    justify-content: center;
+                    align-items: center;
+
+                    .agree-text {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 50px;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+                        background: #F1F1F1;
+                        border-radius: 12px;
+                        margin-bottom: 20px;
+                    }
+
+                    button {
+                        padding: 8px 33px;
+                        color: #fff;
+                        background: #F56E1E;
+                        border-radius: 12px;
+                        border: none;
+                        margin: 0 auto;
+                    }
+
+                    p {
+                        margin-top: 10px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #6E7191;
+
+                        a {
+                            text-decoration: none;
+                            color: #F56E1E;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

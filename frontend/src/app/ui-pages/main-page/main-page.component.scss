@@ -1,0 +1,164 @@
+.hero {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+
+        .main-banner {
+            position: relative;
+            background: url(../../../assets/img/main/banner-main2.svg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+
+            .main-banner-btn {
+                position: absolute;
+                bottom: 25px;
+                left: 165px;
+                padding: 8px 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #F56E1E;
+                color: #fff;
+                border-radius: 12px;
+                border: none;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.categories {
+    margin-bottom: 20px;
+
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+        
+        .categories-title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 36px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.banner-wrapper {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.sale-hits {
+    margin-bottom: 20px;
+
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+
+        .sale-hits-title {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 36px;
+            color: #4E4B66;
+            margin-bottom: 20px;
+        }
+        
+        
+
+        .col-md-2:hover {
+            box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.2);
+            border-radius: 6px;
+        }
+    }
+}
+
+.advantages-list {
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+    
+    
+        .advantage {
+            width: 100%;
+            height: 190px;
+            border: 1px solid #6E7191;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 21px 36px;
+
+            .advantage-img {
+                padding: 25px 12px;
+                border: 3px solid #F56E1E;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+
+            .advantage-img-2 {
+                padding: 15px 20px 21px 20px;
+                border: 3px solid #F56E1E;
+                border-radius: 50%;
+            }
+
+            .advantage-img-3 {
+                padding: 14px 18px 14px 24px;
+                border: 3px solid #F56E1E;
+                border-radius: 50%;
+            }
+
+            .advantage-inner {
+                .advantage-title {
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 32px;
+                    color: #F56E1E;
+                    margin-bottom: 10px;
+                }
+
+                .advantage-text {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #6E7191;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+.our-store {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+
+        .store-title {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 36px;
+            margin-bottom: 20px;
+        }
+
+        .store-text {
+            font-size: 14px;
+            color: 6E7191;
+        }
+    }
+}

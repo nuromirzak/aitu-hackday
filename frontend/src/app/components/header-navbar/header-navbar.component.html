@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" [routerLink]="['/']">
+            <img src="../../../assets/img/main/logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="catalog" [routerLink]="['/catalog']">
+                <img src="../../../assets/img/main/menu-icon.svg" alt="">
+                Каталог</button>
+            <form class="d-flex search_form">
+                <input class="form-control me-2" type="search" placeholder="Я ищу" aria-label="Я ищу">
+            </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/cart']">
+                        <img src="../../../assets/img/main/cart.svg" alt="">
+                        Корзина</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="../../../assets/img/main/bookmark.svg" alt="">
+                        Избранное</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['registration']">
+                        <img src="../../../assets/img/main/profile.svg" alt="">
+                        Профиль</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

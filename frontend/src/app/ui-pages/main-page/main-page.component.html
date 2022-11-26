@@ -1,0 +1,116 @@
+<section class="hero">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="main-banner">
+                <button [routerLink]="['/']" class="main-banner-btn">
+                    <img src="../../../assets/img/main/cart-product.svg" alt="">
+                    Подробнее</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="categories">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="categories-title">Популярные категории</div>
+            <div class="col-md-2" *ngFor="let item of categories">
+                <app-category-item [item]="item"></app-category-item>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="banner-wrapper">
+    <app-banner></app-banner>
+</div>
+
+<section class="sale-hits">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sale-hits-title">Хиты продаж</div>
+
+            <div class="col-md-2" *ngFor="let product of product2">
+                <app-sale-product [product]="product"></app-sale-product>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<div class="banner-wrapper">
+    <app-banner></app-banner>
+</div>
+
+<section class="sale-hits">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sale-hits-title">Black Friday</div>
+            <div class="col-md-2" *ngFor="let product of products">
+                <app-sale-product [product]="product"></app-sale-product>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="banner">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="banner-photo"></div>
+        </div>
+    </div>
+</section>
+
+<section class="advantages-list">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="advantage">
+                    <div class="advantage-img">
+                        <img src="../../../assets/img/main/advantage-1.svg" alt="">
+                    </div>
+                    <div class="advantage-inner">
+                        <div class="advantage-title">Динамично</div>
+                        <div class="advantage-text">Мы предлагаем более 15000 товаров на все виды нужные средства, технику и телевизоры, одежду.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="advantage">
+                    <div class="advantage-img advantage-img-2">
+                        <img src="../../../assets/img/main/advantage-2.svg" alt="">
+                    </div>
+                    <div class="advantage-inner">
+                        <div class="advantage-title">Надежно</div>
+                        <div class="advantage-text">На весь ассортимент мы предоставляем гарантию до 3 лет! Продукция «.Shop» выпускается на современном заводском оборудовании. </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="advantage">
+                    <div class="advantage-img advantage-img-3">
+                        <img src="../../../assets/img/main/advantage-3.svg" alt="">
+                    </div>
+                    <div class="advantage-inner">
+                        <div class="advantage-title">Доступно</div>
+                        <div class="advantage-text">Ценовая политика фирмы – одна из наших самых сильных сторон. Мы следим за ситуацией на рынке.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our-store">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="store-title">Интернет Магазин .Shop</div>
+            <div class="store-text">Интернет-магазин .Shop является одним из проектов компании «.Shop» – лидера национальной сети   магазинов электробытовой и компьютерной техники Республики Казахстан. Если вы ищете лучший интернет магазин в Казахстане – он находится по адресу www.Shop.kz.Интернет-магазин .Shop является одним из проектов компании «.Shop» – лидера национальной сети магазинов электробытовой и компьютерной техники Республики Казахстан. Если вы ищете лучший интернет магазин в Казахстане – он находится по адресу www.Shop.kz.
+            Интернет-магазин .Shop является одним из проектов компании «.Shop» – лидера национальной сети магазинов электробытовой и компьютерной техники Республики Казахстан. Если вы ищете лучший интернет магазин в Казахстане – он находится по адресу www.Shop.kz.
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,34 @@
+<div class="sale-product">
+    <div class="sale-product-img">
+        <img src="../../../assets/img/main/{{product['img-src']}}" alt="">
+        <span class="upper-title">{{product['upper-title']}}</span>
+        <div class="bookmark" (click)="isActiveBookmark()">
+            <img *ngIf="!isActiveMark" src="../../../assets/img/main/Save-bookmark.svg" alt="">
+            <img *ngIf="isActiveMark" src="../../../assets/img/main/Save-bookmark-active.svg" alt="">
+        </div>
+    </div>  
+    <div class="sale-product-content">
+        <div class="sale-product-price">
+            <div class="sale-product-original-price">{{product['original-price']}}₸</div>
+            <div class="sale-product-pre-price">{{product['pre-price']}}₸</div>
+        </div>
+        <div class="sale-product-description">
+            <ul>                
+                <li *ngIf="product['description'].Diagonal">{{product['description']?.Diagonal}}</li>
+                <li *ngIf="product['description'].Cpp">{{product['description']?.Cpp}}</li>
+                <li>{{product['description'].type}}</li>
+                <li>{{product['description'].obyem}}</li>
+                <li>{{product['description'].support}}</li>
+                <li>{{product['description'].videokarta}}</li>
+            </ul>
+        </div>
+        <div class="sale-product-installment">
+            В рассрочку: 
+            <span>{{product['installment']}}</span>
+        </div>
+    </div>
+    <div class="sale-product-btn">
+        <img src="../../../assets/img/main/cart-product.svg" alt="">
+        В корзину
+    </div>
+</div>
