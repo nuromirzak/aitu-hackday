@@ -15,5 +15,5 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 3000 5000
-CMD node authServer.js && node app.js
+EXPOSE 5000
+CMD [ "node", "server.js" ]
