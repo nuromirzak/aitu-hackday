@@ -1,0 +1,19 @@
+<div class="map-block">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="map-title-upper">Главная страница/<span>Карта Магазинов</span></div>
+      <div class="map-title">Карта Магазинов</div>
+
+      <div class="map-content">
+        <div class="map-container">
+          <ya-map [center]="[51.169392, 71.449074]">
+            <div *ngFor="let coordinate of shopAddresses">
+              <ya-placemark (yaclick)="showAlert(coordinate)" [geometry]="[coordinate['coordinate'].lat, coordinate['coordinate'].lng]" ></ya-placemark>
+            </div>
+          </ya-map>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

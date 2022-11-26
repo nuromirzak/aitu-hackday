@@ -1,0 +1,60 @@
+.sidebar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .sidebar-catalog {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .sidebar-catalog-title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #6E7191;
+            padding: 8px 12px;
+            background: #F1F1F1;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+        .sidebar-catalog-title:hover {
+            color: #DE5703;
+            background: #F1F1F1;
+            cursor: pointer;
+        }
+
+        .sidebar-catalog-types {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 8px;
+            margin-bottom: 8px;
+
+            .catalog-type {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: #6E7191;
+                padding: 8px 12px;
+                a {
+                    text-decoration: none;
+                    color: #6E7191;
+                }
+                a:hover {
+                    color: #DE5703;
+                    cursor: pointer;
+                }
+
+                &:hover {
+                    color: #DE5703;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

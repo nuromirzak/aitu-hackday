@@ -1,0 +1,235 @@
+.profile-block {
+    margin-bottom: 40px;
+    
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+
+        .profile-title-upper {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            margin-bottom: 15px;
+
+            span {
+                color: #F56E1E;
+            }
+        }
+
+        .profile-title {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 38px;
+            color: #4E4B66;
+            margin-bottom: 60px;
+        }
+        
+        .profile-content {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .profile-sidebar {
+                width: 23%;
+                margin-right: 2%;
+                height: auto;
+                background: #F8F8F8;
+                border-radius: 20px;
+                padding: 15px;
+
+                a {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    width: 100%;
+                    padding: 8px 12px;
+                    background: #FCE1D2;
+                    border-radius: 12px;
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #F56E1E;
+                    cursor: pointer;
+                }
+            }
+
+            .profile-info {
+                width: 75%;
+
+                .profile-user-information {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    .profile-info-title {
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 24px;
+                        margin-bottom: 24px;
+                    }
+
+                    .profile-user-wrapper {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        border: 1px solid #F56E1E;
+                        border-radius: 12px;
+                        padding: 15px;
+
+                        .profile-name {
+                            margin-right: 60px;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 18px;
+                            color: #6E7191;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+
+                            .user-img {
+                                width: 48px;
+                                height: 48px;
+                                padding: 11px;
+                                border-radius: 50%;
+                                background: #FDE9DE;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-right: 5px;
+                            }
+
+                            .edit-img {
+                                width: 36px;
+                                height: 36px;
+                                padding: 0 9px;
+                                border-radius: 50%;
+                                background: #F1F1F1;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-left: 30px;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .profile-user-data {
+                            .user-phone {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                            }
+
+                            .user-phone {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                            }
+
+                            .edit-img {
+                                width: 36px;
+                                height: 36px;
+                                padding: 0 9px;
+                                border-radius: 50%;
+                                background: #F1F1F1;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-left: 5px;
+                                cursor: pointer;
+                            }
+                        }
+
+                    }
+                }
+
+                .address-info {
+                    margin-top: 20px;
+                    .address-info-title {
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 24px;
+                        margin-bottom: 24px;
+                    }
+
+                    .address-user-wrapper {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+
+                        .address-item {
+                            height: 130px;
+                            width: 30%;
+                            border: 1px solid #F56E1E;
+                            border-radius: 12px;
+                            margin-right: 20px;
+                            padding: 15px;
+
+                            .address-name {
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: #6E7191;
+                            }
+
+                            .address-data {
+                                margin-top: 20px;
+
+                                .active-btn {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 30px;
+                                    color: #F56E1E;
+                                    background: #FCE1D2;
+                                    border: 1px solid #F56E1E;
+                                    border-radius: 8px;
+                                    padding: 0 12px;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .add-address {
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 18px;
+                                color: #DE5703;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                height: 100%;
+                                cursor: pointer;
+
+                                span {
+                                    width: 36px;
+                                    height: 32px;
+                                    font-size: 30px;
+                                    background: #F1F1F1;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding-bottom: 5px;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

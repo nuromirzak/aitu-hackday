@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Динамично. Надежно. Доступно.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <div ngbDropdown>
+                        <button class="btn btn-language" id="language" 
+                                ngbDropdownToggle>
+                                <img src="../../../assets/img/main/Group 99.svg" alt="">
+                                Ru</button>
+                        <div ngbDropdownMenu="language">
+                          <button ngbDropdownItem>Русский</button>
+                          <button ngbDropdownItem>Қазақша</button>
+                          <button ngbDropdownItem>English</button>
+                        </div>
+                      </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <div ngbDropdown class="dropdown-inner">
+                        <button class="btn" id="offers" 
+                                ngbDropdownToggle>Акции</button>
+                        <div ngbDropdownMenu="offers">
+                          <button ngbDropdownItem>Акции на телефоны</button>
+                          <button ngbDropdownItem>Акции на ноутбуки</button>
+                          <button ngbDropdownItem>Акции на аксессуары</button>
+                        </div>
+                      </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <div ngbDropdown class="dropdown-inner">
+                        <button class="btn" id="sale" 
+                                ngbDropdownToggle>Распродажа</button>
+                        <div ngbDropdownMenu="sale">
+                          <button ngbDropdownItem>Распродажа на телефоны</button>
+                          <button ngbDropdownItem>Распродажа на ноутбуки</button>
+                          <button ngbDropdownItem>Распродажа на аксессуары</button>
+                        </div>
+                      </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Black Friday</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/map']">Карта</a>
+                </li>
+                <li class="nav-item social-navs">
+                    <a class="nav-link social-network-1" href="#">
+                        <img src="../../../assets/img/main/telegram.svg" alt="">
+                    </a>
+                </li>
+                <li class="nav-item social-navs">
+                    <a class="nav-link social-network" href="#">
+                        <img src="../../../assets/img/main/vk.svg" alt="">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link phone-number" href="#">8 (771) 592-72-47</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>

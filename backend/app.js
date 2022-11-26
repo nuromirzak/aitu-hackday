@@ -19,12 +19,17 @@ app.use((req, res, next) => {
     next();
 });
 
-app.get('/all', async (req, res) => {
+app.get('/api/all', async (req, res) => {
     let products = await Product.find();
     res.json(products)
 })
 
-app.get('/catalog/:category', async (req, res) => {
+app.get('/api/products/:id', async (req, res) => {
+    let products = await Product.findById(req.params.id);
+    res.json(products)
+})
+
+app.get('/api/:category', async (req, res) => {
     let products = await Product.find({item_category: req.params.category});
     res.json(products)
 })

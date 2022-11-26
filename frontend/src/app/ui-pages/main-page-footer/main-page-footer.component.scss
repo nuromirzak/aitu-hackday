@@ -1,0 +1,95 @@
+footer {
+    background: #F1F1F1;
+    padding-top: 40px;
+    position: relative;
+
+    .container {
+        .footer-lines {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    
+        .footer-lines-2 {
+    
+            .line-title {
+                font-weight: 600;
+                margin-bottom: 20px;
+                font-size: 16px;
+                line-height: 18px;
+                color: #6E7191;
+            }
+    
+            a {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: #6E7191;
+                text-decoration: none;
+                margin-bottom: 10px;
+            }
+        }
+    
+        .footer-lines-last {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            
+            span {
+                text-align: right;
+                 
+                a {
+                    text-decoration: none;
+                    color: #6E7191;
+                }
+            }
+    
+            .social-links {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: flex-end;
+                margin-top: 5px;
+                margin-bottom: 10px;
+                
+                .telegram {
+                    margin-right: 5px;
+                    cursor: pointer;
+                }
+                .vk  {
+                    cursor: pointer;
+                }
+            }
+    
+            .footer-bottom-lines {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 18px;
+                color: #6E7191;
+                margin-bottom: 10px;
+    
+                span {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #A0A3BC;
+                }
+            }
+        }
+    }
+
+    .top-btn {
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F56E1E;
+        border-radius: 50%;
+        padding: 11px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,15 @@
+.banner {
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+
+        .banner-photo {
+            height: 200px;
+            background: url('../../../assets/img/main/banner.svg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+        }
+    }
+}

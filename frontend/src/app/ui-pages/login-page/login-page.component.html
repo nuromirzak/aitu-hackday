@@ -1,0 +1,78 @@
+<div class="registration-block">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="registration-upper-title">
+                Главная страница/<span>Страница авторизации</span>
+            </div>
+            <div class="registration-title">
+                Страница авторизации
+            </div>
+
+            <div class="registration-form-block">
+                <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+                    <div class="registration-form-title">Персональная информация</div>
+                
+                    <div class="overall-input-block">                
+                        <div class="input-block">
+                            <label for="username" [ngClass]="reactiveForm.get('username').dirty ? 'touchedClass' : ''">Имя пользователя*</label>
+                            <input
+                            type="text"
+                            id="username"
+                            formControlName="username"
+                            placeholder="Имя пользователя*"
+                            />
+                            <div
+                            *ngIf="
+                                reactiveForm.get('username').touched &&
+                                !reactiveForm.get('username').valid
+                            "
+                            >
+                            <ul class="errorsField">
+                                <li *ngIf="reactiveForm.get('username').errors?.['required']">
+                                Это поле обязательно для заполнения
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+
+                        <div class="input-block">
+                            <label for="password" [ngClass]="reactiveForm.get('password').dirty ? 'touchedClass' : ''">Пароль*</label>
+                            <input
+                            type="password"
+                            id="password"
+                            formControlName="password"
+                            placeholder="Пароль*"
+                            />
+                            <div
+                            *ngIf="
+                                reactiveForm.get('password').touched &&
+                                !reactiveForm.get('password').valid
+                            "
+                            >
+                            <ul class="errorsField">
+                                <li *ngIf="reactiveForm.get('password').errors?.['required']">
+                                    Это поле обязательно для заполнения
+                                </li>
+                                <li *ngIf="reactiveForm.get('password').errors?.['minlength']">
+                                    Минимальное значение пароля 8 символов
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+            
+                    </div>
+
+                    <div class="btn-wrapper">
+                        <div class="agree-text">Я соглашаюсь на обработку персональных данных 
+                            в соответствии c Политикой обработки персональных данных</div>
+                        <button type="submit" [disabled]="!reactiveForm.valid">Зарегистрироваться</button>
+                        <p>Все еще нету существующего аккаунта? <a [routerLink]="['/registration']">Регистрация</a> </p>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
